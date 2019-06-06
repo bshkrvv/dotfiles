@@ -1,0 +1,59 @@
+[org/gnome/settings-daemon/plugins/media-keys]
+screenreader=''
+magnifier-zoom-out=''
+logout=''
+magnifier-zoom-in=''
+home='<Super>e'
+help=''
+magnifier=''
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Return'
+command='gnome-terminal'
+name='Terminal'
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
+
+[org/gnome/desktop/wm/keybindings]
+switch-to-workspace-left=@as []
+move-to-workspace-left=@as []
+begin-move=@as []
+move-to-monitor-right=@as []
+move-to-monitor-left=@as []
+toggle-maximized=@as []
+panel-run-dialog=['<Super>r']
+cycle-windows=@as []
+unmaximize=['<Super>Down']
+begin-resize=@as []
+panel-main-menu=@as []
+cycle-windows-backward=@as []
+cycle-group-backward=@as []
+cycle-panels-backward=@as []
+switch-to-workspace-right=@as []
+switch-to-workspace-down=['<Super>Page_Down']
+move-to-workspace-down=['<Super><Shift>Page_Down']
+cycle-group=@as []
+switch-applications=['<Super>Tab']
+minimize=@as []
+switch-panels-backward=@as []
+switch-applications-backward=['<Shift><Super>Tab']
+move-to-monitor-down=@as []
+switch-group=['<Super>Above_Tab']
+activate-window-menu=@as []
+cycle-panels=@as []
+move-to-workspace-up=['<Super><Shift>Page_Up']
+move-to-workspace-right=@as []
+switch-group-backward=['<Shift><Super>Above_Tab']
+switch-panels=@as []
+move-to-monitor-up=@as []
+close=['<Shift><Super>c']
+switch-to-workspace-up=['<Super>Page_Up']
+
+[org/gnome/shell/keybindings]
+toggle-message-tray=@as []
+open-application-menu=@as []
+toggle-application-view=@as []
+toggle-overview=@as []
+focus-active-notification=@as []

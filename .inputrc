@@ -1,0 +1,12 @@
+# Source global configuration.
+$include /etc/inputrc
+
+# Set Vi editing mode.
+set editing-mode vi
+
+# Ignore case on completion.
+set completion-ignore-case on
+
+# Wait until another key is pressed to decide which key sequence to complete
+# when reading an ambiguous sequence.
+set keyseq-timeout 0
