@@ -25,7 +25,7 @@ Plugin 'morhetz/gruvbox'
 call vundle#end()
 
 " Enable filetype plugins.
-filetype on
+filetype plugin indent on
 
 " Set colorscheme.
 colorscheme gruvbox
@@ -143,7 +143,7 @@ set relativenumber
 
 " Set the number of spaces to use for each step of (auto)indent and the
 " number of spaces that a <Tab> in the file counts for.
-set shiftwidth=2
+set shiftwidth=4
 let &tabstop=&shiftwidth
 
 " Always show sign column.
