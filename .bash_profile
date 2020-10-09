@@ -10,7 +10,7 @@ export EDITOR=vim
 export PAGER=less
 
 # Hardware accelerated video decoding
-export LIBVA_DRIVER_NAME=i965
+export LIBVA_DRIVER_NAME=iHD
 export VDPAU_DRIVER=va_gl
 
 # Font scaling for QT apps
