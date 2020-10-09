@@ -80,6 +80,9 @@ set ignorecase
 " While searching, show where the pattern, as it was typed so far, matches.
 set incsearch
 
+" Cyrillic mapping.
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
 " Do not redraw while executing macros.
 set lazyredraw
 
