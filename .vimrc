@@ -4,49 +4,14 @@ set nocompatible
 " Do not load defauls.
 let skip_defaults_vim=1
 
-" Disable filetype plugins before Vundle initialization.
-filetype off
-
-" Set the runtime path to include Vundle.
-set runtimepath+=~/.vim/bundle/Vundle.vim
-
-" Initialize Vundle.
-call vundle#begin()
-
-" Let Vundle manage itself.
-Plugin 'VundleVim/Vundle.vim'
-
-" Include other plugins.
-Plugin 'airblade/vim-gitgutter'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'morhetz/gruvbox'
-
-" Finish Vundle.
-call vundle#end()
-
 " Enable filetype plugins.
 filetype plugin indent on
 
 " Set colorscheme.
-colorscheme gruvbox
+colorscheme default
 
 " Tell Vim to use colors that look good.
 set background=dark
-
-" Enable truecolor support.
-set termguicolors
-let &t_8f="[38;2;%lu;%lu;%lum"
-let &t_8b="[48;2;%lu;%lu;%lum"
-
-" Disable highlighting for sign column.
-highlight clear SignColumn
-
-" Change sign column background color for gruvbox.
-let g:gruvbox_sign_column='bg0'
-
-" Change gruvbox contrast.
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_contrast_light='hard'
 
 " Enable syntax highlighting.
 syntax enable
@@ -74,14 +39,6 @@ let g:mapleader="\<Space>\<Space>"
 
 " Don't run 'man' to lookup the keyword under ther cursor.
 nmap K <nop>
-
-" Map most commonly used GitGutter commands.
-nmap <silent> <Leader>ghp :GitGutterPreviewHunk<CR>
-nmap <silent> <Leader>ghs :GitGutterStageHunk<CR>
-nmap <silent> <Leader>ghu :GitGutterUndoHunk<CR>
-
-" Show git log of current line.
-nmap <silent> <Leader>lcl :exec ':!git log -L' . line('.') . ',' . line('.') . ':%'<CR>
 
 " Disable search highlighting.
 nmap <silent> <Leader>nh :nohlsearch<CR>:let @/=''<CR>
@@ -145,9 +102,6 @@ set relativenumber
 " number of spaces that a <Tab> in the file counts for.
 set shiftwidth=4
 let &tabstop=&shiftwidth
-
-" Always show sign column.
-set signcolumn=yes
 
 " Override the 'ignorecase' option if the search pattern contains upper case.
 set smartcase

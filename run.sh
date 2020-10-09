@@ -20,6 +20,3 @@ dconf load / < settings.dconf
 
 cp --parents .config/ranger/rc.conf ~/
 cp .bashrc .bash_profile .inputrc .gitconfig .vimrc .tmux.conf ~/
-
-git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
