@@ -7,13 +7,17 @@ sudo dnf --assumeyes --refresh upgrade
 sudo dnf --assumeyes install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf --assumeyes install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# Remove preinstalled packages
+# Remove packages
 pkglist=$(<remove.list)
 sudo dnf --assumeyes remove $pkglist
 
 # Install packages
 pkglist=$(<install.list)
 sudo dnf --assumeyes install $pkglist
+
+# Replace packages
+pkglist=$(<replace.list)
+sudo dnf --assumeyes --allowerasing install $pkglist
 
 # Configure system
 dconf load / < settings.dconf
