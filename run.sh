@@ -15,10 +15,6 @@ sudo dnf --assumeyes remove $pkglist
 pkglist=$(<install.list)
 sudo dnf --assumeyes install $pkglist
 
-# Replace packages
-pkglist=$(<replace.list)
-sudo dnf --assumeyes --allowerasing install $pkglist
-
 # Configure system
 dconf load / < settings.dconf
 
