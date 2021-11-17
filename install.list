@@ -1,8 +1,12 @@
+dconf-editor
+gnome-extensions-app
+google-chrome-stable
 gstreamer1-libav
 gstreamer1-vaapi
 intel-media-driver
 libvdpau-va-gl
 pass
 ranger
+seahorse
 tmux
 vim
