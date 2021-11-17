@@ -17,7 +17,5 @@ pkglist=$(<install.list)
 sudo dnf --assumeyes install $pkglist
 
 # Configure system
-dconf load / < settings.dconf
-
-cp --parents .config/ranger/rc.conf ~/
-cp .bashrc .bash_profile .inputrc .gitconfig .vimrc .tmux.conf ~/
+dconf load / < dconf.dump
+cp -a ./home/. ~/
